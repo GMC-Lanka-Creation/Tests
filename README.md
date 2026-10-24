@@ -1,11 +1,11 @@
 # GMC Lanka – Integration Tests
 
-[![Tests CI](https://github.com/test-gmc-lanka/tests/actions/workflows/ci.yml/badge.svg?branch=develop)](https://github.com/test-gmc-lanka/tests/actions/workflows/ci.yml)
+[![Tests CI](https://github.com/gmc-lanka/tests/actions/workflows/ci.yml/badge.svg?branch=develop)](https://github.com/gmc-lanka/tests/actions/workflows/ci.yml)
 
-Integration test suites for the [test-gmc-lanka](https://github.com/test-gmc-lanka) project. Unit tests
-stay next to the code in [frontend](https://github.com/test-gmc-lanka/frontend) and
-[backend](https://github.com/test-gmc-lanka/backend); the pipelines that run these suites are in
-[infra](https://github.com/test-gmc-lanka/infra).
+Integration test suites for the [gmc-lanka](https://github.com/gmc-lanka) project. Unit tests
+stay next to the code in [frontend](https://github.com/gmc-lanka/frontend) and
+[backend](https://github.com/gmc-lanka/backend); the pipelines that run these suites are in
+[infra](https://github.com/gmc-lanka/infra).
 
 ## Layout
 
@@ -60,7 +60,7 @@ at MySQL.
 ## CI
 
 [.github/workflows/ci.yml](.github/workflows/ci.yml) calls
-[`tests-ci.yml`](https://github.com/test-gmc-lanka/infra/blob/main/.github/workflows/tests-ci.yml) on
+[`tests-ci.yml`](https://github.com/gmc-lanka/infra/blob/main/.github/workflows/tests-ci.yml) on
 every push and PR: lint and format check, backend integration tests against MySQL 8 with the coverage
 gate, and frontend integration tests. The backend and frontend pipelines also check this repository
 out and run the suites as their own Integration Tests stage.
